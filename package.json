@@ -1,0 +1,22 @@
+{
+    "name":"webant-handler-scss",
+    "author":"A Kazim",
+    "description":"A handler for the webant module for SCSS requires.",
+    "keywords":[
+        "ant",
+        "scss",
+        "webant"
+    ],
+    "version":"0.3.0",
+    "dependencies":{
+        "node-sass": "0.6.x"
+    },
+    "devDependencies":{
+        "test":"0.6.x"
+    },
+    "main":"./lib/index.js",
+    "scripts":{
+        "test":"node ./test/index.js"
+    },
+    "licence":"MIT"
+}

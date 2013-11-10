@@ -9,13 +9,13 @@
     "scss",
     "webant"
   ],
-  "version": "0.4.0",
+  "version": "0.4.1",
   "dependencies": {
-    "js-string-escape":"1.0.x",
+    "js-string-escape": "1.0.x",
     "node-sass": "0.6.x"
   },
   "devDependencies": {
-    "extend":"1.2.x",
+    "extend": "1.2.x",
     "test": "0.6.x"
   },
   "repository": {
@@ -26,5 +26,12 @@
   "scripts": {
     "test": "node ./test/index.js"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "readme": "# node-modules-webant-handler-scss\n\n_Require SCSS files with [webant](https://github.com/theakman2/node-modules-webant)_\n\n## Installation\n\nThere should be no need to install this module since it's required by the [webant](https://github.com/theakman2/node-modules-webant) module by default.\n\nIf for some reason you'd like to use the module outside of webant, install as follows:\n\n    $ npm install webant-handler-scss\n\n## Usage\n\nEnsure the `scss` handler is present in your webant configuration file. For example:\n\n````json\n{\n    \"entry\":\"src/js/main.js\",\n    \"dest\":\"build/main.js\",\n    \"handlers\":{\n        \"scss\":{\n            \"compress\":true\n        }\n    }\n}\n````\n\nYou may now `require` SCSS files:\n\n````javascript\nrequire(\"../path/to/styles.scss\");\n````\n\nSee the [webant](https://github.com/theakman2/node-modules-webant) module for more information.\n\n## Settings\n\n__`compress`__\n\nCan be either `true` or `false` (default). Controls whether the compiled CSS is compressed.\n\n## Tests\n\n    $ npm test",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/theakman2/node-modules-webant-handler-scss/issues"
+  },
+  "_id": "webant-handler-scss@0.4.0",
+  "_from": "webant-handler-scss@0.4.x"
 }

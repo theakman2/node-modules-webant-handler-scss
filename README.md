@@ -21,8 +21,13 @@ Ensure the `scss` handler is present in your webant configuration file. For exam
 You may now `require` SCSS files:
 
 ````javascript
-require("../path/to/styles.scss");
+// Get the compiled CSS.
+var css = require("../path/to/styles.scss");
+
+// Apply the CSS to the document.
+document.head.innerHTML += '<style type="text/css">' + css + '</style>';
 ````
+
 
 See the [webant](https://github.com/theakman2/node-modules-webant) module for more information.
 

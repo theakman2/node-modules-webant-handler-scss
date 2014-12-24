@@ -1,6 +1,6 @@
-require("styles.scss");
+var css = require("styles.scss");
 
-require("{css/addStylesheet}")("#foo { height: 32px; padding:0; border:0; margin:0; }");
+document.head.innerHTML += '<style type="text/css">' + css + '</style>';
 
 setTimeout(function(){
 	var el = document.getElementById("foo");

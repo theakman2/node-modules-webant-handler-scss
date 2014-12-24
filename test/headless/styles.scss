@@ -1,5 +1,4 @@
-$width: 342px;
-$height: 194px;
+@import "./sub/settings.scss";
 
 html {
 	body {
@@ -9,5 +8,11 @@ html {
 		outline:0;
 		width:$width;
 		height:$height;
-	}	
+	}
+	#foo {
+		height: 32px;
+		padding:0;
+		border:0;
+		margin:0;
+	}
 }
